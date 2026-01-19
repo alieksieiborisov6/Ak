@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="login-box">
+    <h2 id="title">Login</h2>
+
+    <!-- LOGIN -->
+    <form id="loginForm">
+        <div class="input-box">
+            <input type="text" required>
+            <label>Username</label>
+        </div>
+
+        <div class="input-box">
+            <input type="password" required>
+            <label>Password</label>
+        </div>
+
+        <div class="options">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot Password?</a>
+        </div>
+
+        <button type="submit">Login</button>
+
+        <p class="register">
+            Don't have an account?
+            <a href="#" onclick="showRegister()">Register</a>
+        </p>
+    </form>
+
+    <!-- REGISTER -->
+    <form id="registerForm" class="hidden">
+        <div class="input-box">
+            <input type="text" required>
+            <label>Username</label>
+        </div>
+
+        <div class="input-box">
+            <input type="email" required>
+            <label>Email</label>
+        </div>
+
+        <div class="input-box">
+            <input type="password" required>
+            <label>Password</label>
+        </div>
+
+        <button type="submit">Register</button>
+
+        <p class="register">
+            Already have an account?
+            <a href="#" onclick="showLogin()">Login</a>
+        </p>
+    </form>
+</div>
+
+<script src="js/login.js"></script>
+</body>
+</html>
